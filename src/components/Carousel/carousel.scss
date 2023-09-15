@@ -1,0 +1,21 @@
+.carousel{
+    position: relative;
+    .caro-img{
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+    .span-div{
+        position: absolute;
+        left: 10vw;
+        top:36vh;
+        color: white;
+        .caro-span{
+            font-weight: bold;
+            font-size: 36px;
+        }
+        .caro-spansm{
+            font-size: 18px;            
+        }
+    }
+}

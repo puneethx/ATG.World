@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw 0vw 0vw;
+    .left{
+        .navul{
+            display: flex;
+            gap: 2vw;
+            li{
+                list-style: none;
+                color: #8A8A8A;
+            }
+            #active{
+                color: black;
+            }
+        }
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        gap: 1vw;
+        .post{
+            display: flex;
+            gap: 5px;
+            padding: 7px 10px; 
+            border-radius: 5px;
+            background-color: #EDEEF0;
+        }
+        .group{
+            background-color: #2F6CE5;
+            display: flex;
+            color: white;
+            gap: 5px;
+            padding: 7px 10px; 
+            border-radius: 5px;
+        }
+    }
+}
+.linediv{
+    width: 72.5vw;
+    margin-left: 15vw;
+    .line{
+        border: 1px solid #E0E0E0;
+    }
+}
