@@ -21,10 +21,10 @@ const Navbar = () => {
                     <span>Write a Post</span>
                     <img src={Down} alt='img'></img>
                 </div>
-                <div className='group'>
+                <button className='group'>
                     <img src={Group} alt='img'></img>
                     <span>Join Group</span>
-                </div>
+                </button>
             </div>
         </div>
         <div className='linediv'>

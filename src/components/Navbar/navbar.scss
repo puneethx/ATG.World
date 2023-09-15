@@ -40,7 +40,10 @@
         .group{
             background-color: #2F6CE5;
             display: flex;
+            align-items: center;
+            border: none;
             color: white;
+            font-family: poppins;
             gap: 5px;
             padding: 7px 10px; 
             border-radius: 5px;
@@ -48,7 +51,7 @@
     }
 }
 .linediv{
-    width: 72.5vw;
+    width: 71vw;
     margin-left: 15.3vw;
     position: absolute;
     z-index: -999;
