@@ -1,0 +1,63 @@
+.home{
+    display: flex;
+    margin: 7vh 15vh 10vh 15vw;
+    gap: 5vw;
+    .left{
+        flex: 2.1;
+        .post-ared{
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            margin-bottom: 1vw;
+            .postimg{
+                border-radius: 10px 10px 0px 0px;
+                width: 100%;
+                height: 32vh;
+                object-fit: cover;
+            }
+            .text{
+                margin: 1.5vw;
+                display: flex;
+                flex-direction: column;
+                gap: 2vh;
+                .postmenu{
+                    display: flex;
+                    gap: 7vw;
+                }
+                .medtext{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .boldtext{
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                .smtext{
+                    font-size: 18px;
+                    color: #5C5C5C;
+                }
+            }
+            .userEx{
+                margin: 1.5vw;
+                display: flex;
+                justify-content: space-between;
+                .userleft{
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    gap: 1vw;
+                    .userImg{
+                        border-radius: 50%;
+                    }
+                }
+                .userright{
+                    display: flex;
+                    align-items: center;
+                    gap: 2vw;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1;
+    }
+}

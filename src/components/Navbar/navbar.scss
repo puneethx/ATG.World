@@ -1,7 +1,8 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    margin: 2vw 0vw 0vw;
+    margin: 2vw 0vw -3.7vh 0vw;
+    position: relative;
     .left{
         .navul{
             display: flex;
@@ -9,9 +10,16 @@
             li{
                 list-style: none;
                 color: #8A8A8A;
+                padding-bottom: 3vh;
+                transition: 0.1s;
+                &:hover{
+                    border-bottom: 2px solid black;
+                }
             }
+            
             #active{
                 color: black;
+                border-bottom: 2px solid black;
             }
         }
     }
@@ -21,6 +29,7 @@
         align-items: center;
         font-size: 15px;
         gap: 1vw;
+        padding-bottom: 4vh;
         .post{
             display: flex;
             gap: 5px;
@@ -40,7 +49,9 @@
 }
 .linediv{
     width: 72.5vw;
-    margin-left: 15vw;
+    margin-left: 15.3vw;
+    position: absolute;
+    z-index: -999;
     .line{
         border: 1px solid #E0E0E0;
     }
