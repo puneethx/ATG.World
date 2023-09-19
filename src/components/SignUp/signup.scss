@@ -1,0 +1,129 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    padding-bottom: 7vh;
+    border-radius: 10px;
+    z-index: 999999;
+    top: 13vh;
+    left: 20vw;
+    .topbar{
+        background-color: #EFFFF4;
+        padding: 2vh 7vw;
+        border-radius: 10px 10px 0px 0px;
+        p{
+            color: #008A45;
+            font-size: 14px;
+        }
+    }
+    .acc{
+        display: flex;
+        gap: 15vw;
+        align-items: center;
+        h1{
+            font-size: 24px;
+        }
+        span{
+            font-size: 13px;
+            .bluebold{
+                font-weight: bold;
+                color: #2F6CE5;
+                cursor: pointer;
+            }
+        }
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2vw;
+        .left{
+            flex:0.9;
+            .table{
+                background-color: #F7F8FA;
+                .first-row{
+                    display: flex;
+                    input{
+                        font-family: poppins;
+                        background-color: #F7F8FA;
+                        border: none;
+                        outline: none;
+                        border:1px solid #D9D9DB;
+                        padding: 1.5vh 0vw 1.5vh 0.5vw;
+                    }
+                }
+                .row{
+                    border:1px solid #D9D9DB;
+                    input{
+                        font-family: poppins;
+                        background-color: #F7F8FA;
+                        border: none;
+                        outline: none;
+                        padding: 1.5vh 11.25vw 1.5vh 0.5vw;
+                    }
+                }
+                .third-row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border:1px solid #D9D9DB;
+                    .password{
+                        display: flex;
+                        .eyediv{
+                            display: flex;
+                        }
+                    }
+                    input{
+                        font-family: poppins;
+                        border: none;
+                        background-color: #F7F8FA;
+                        outline: none;
+                        padding: 1.5vh 9.25vw 1.5vh 0.5vw;
+                    }
+                }
+            }
+            .createBtn{
+                padding: 1.5vh 7.82vw;
+                margin-top: 3vh;
+                border-radius: 1.5vw;
+                border: none;
+                color: white;
+                font-family: poppins;
+                background-color: #2F6CE5;
+            }
+            .platform{
+                display: flex;
+                gap: 1vh;
+                flex-direction: column;
+                margin-top: 3vh;
+                .FB{
+                    display: flex;
+                    border:1px solid #D9D9DB;
+                    justify-content: center;
+                    background-color: white;
+                    align-items: center;
+                    padding: 1.5vh 5vw;
+                }
+                .Google{
+                    display: flex;
+                    padding: 1.5vh 5vw;
+                    background-color: white;
+                    border:1px solid #D9D9DB;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .right{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            span{
+                font-size: 11px;
+            }
+        }
+    }
+}

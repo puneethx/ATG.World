@@ -1,0 +1,21 @@
+.menu{
+    border: 1px solid rgb(225, 225, 225);
+    width: 10vw;
+    background-color: white;
+    border-radius: 0.4vw;
+    position: absolute;
+    top: 47vh;
+    right: 1.5vw;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.1vh;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

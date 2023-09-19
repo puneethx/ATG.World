@@ -8,6 +8,7 @@
             border: 1px solid #E0E0E0;
             border-radius: 10px;
             margin-bottom: 1vw;
+            position: relative;
             .postimg{
                 border-radius: 10px 10px 0px 0px;
                 width: 100%;
@@ -27,7 +28,7 @@
                     background-color: white;
                     position: absolute;
                     right: 0;
-                    top: 6vh;              
+                    top: 6vh;          
                 }
                 .medtext{
                     font-size: 18px;
@@ -133,15 +134,69 @@
             margin-top: 5vh;
             margin-right: 5vw;
             display: flex;
+            gap: 0.4vw;
+            margin-bottom: 7vh;
             img{
                 object-fit: cover;
-                width: 1vw;
-                height: 1vh;
+                width: 2vw;
+                height: 2vh;
+                margin-top: 0.5vh;
             }
             .locspan{
                 color: #a3a3a3;
                 font-size: 13px;
             }
+        }
+        .reco{
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1vw;
+            .recoimg{
+                display: flex;
+                margin-right: 0.3vw;
+            }
+        }
+        .groups{
+            margin-top: 2vh;
+            .grp{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 5vw;
+                padding: 10px;
+                .grpleft{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75vw;
+                    font-size: 14px;
+                }
+                .grpright{
+                    .grpbtn{
+                        font-family: poppins;
+                        border: none;
+                        outline: none;
+                        padding: 2px 10px;
+                        font-size: 13px;
+                        border-radius: 12px;
+                    }
+                    .grpbtnbl{
+                        font-family: poppins;
+                        border: none;
+                        outline: none;
+                        font-size: 13px;
+                        padding: 2px 10px;
+                        border-radius: 12px;
+                        color: white;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+        .seemore{
+            text-align: end;
+            margin-top: 5vh;
+            margin-right: 5.5vw;
+            font-size: 13px;
+            color: #2F6CE5;
         }
     }
 }
