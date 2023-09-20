@@ -1,3 +1,184 @@
 .signIn{
-    background-color: red;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    padding-bottom: 7vh;
+    width: 58.05vw;
+    .topbar{
+        background-color: #EFFFF4;
+        padding: 2vh 7vw;
+        border-radius: 10px 10px 0px 0px;
+        p{
+            color: #008A45;
+            font-size: 14px;
+        }
+    }
+    .acc{
+        display: flex;
+        gap: 24vw;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 24px;
+        }
+        span{
+            font-size: 13px;
+            .bluebold{
+                font-weight: bold;
+                color: #2F6CE5;
+                cursor: pointer;
+            }
+        }
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2vw;
+        .left{
+            flex:0.9;
+            .table{
+                background-color: #F7F8FA;
+                .row{
+                    border:1px solid #D9D9DB;
+                    input{
+                        font-family: poppins;
+                        background-color: #F7F8FA;
+                        border: none;
+                        outline: none;
+                        padding: 1.5vh 11.25vw 1.5vh 0.5vw;
+                    }
+                }
+                .second-row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border:1px solid #D9D9DB;
+                    .password{
+                        display: flex;
+                        .eyediv{
+                            display: flex;
+                        }
+                    }
+                    input{
+                        font-family: poppins;
+                        border: none;
+                        background-color: #F7F8FA;
+                        outline: none;
+                        padding: 1.5vh 9.25vw 1.5vh 0.5vw;
+                    }
+                }
+            }
+            .createBtn{
+                padding: 1.5vh 7.82vw;
+                margin-top: 3vh;
+                border-radius: 1.5vw;
+                border: none;
+                color: white;
+                font-family: poppins;
+                background-color: #2F6CE5;
+            }
+            .platform{
+                display: flex;
+                gap: 1vh;
+                flex-direction: column;
+                margin-top: 3vh;
+                .FB{
+                    display: flex;
+                    font-family: poppins;
+                    gap: 0.3vw;
+                    border:1px solid #D9D9DB;
+                    justify-content: center;
+                    background-color: white;
+                    align-items: center;
+                    padding: 1.5vh 5vw;
+                }
+                .Google{
+                    display: flex;
+                    padding: 1.5vh 5vw;
+                    gap: 0.3vw;
+                    font-family: poppins;
+                    background-color: white;
+                    border:1px solid #D9D9DB;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .right{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            span{
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .signIn{
+        width: 100%;
+        bottom: 0;
+        .topbar{
+            display: none;
+        }
+        .acc{
+            span{
+                display: none;
+            }
+        }
+        .main{
+            flex-direction: column;
+            .left{
+                .table{
+                    .first-row{
+                        input{
+                            padding-left: 2vw;
+                        }
+                    }
+                    .row{
+                        input{
+                            padding-left: 2vw;
+                        }
+                    }
+                    .third-row{
+                        input{
+                            padding-left: 2vw;
+                        }
+                    }
+                }
+                .middle{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .createBtn{
+                        border-radius: 5vw;
+                    }
+                    .bluebold{
+                        font-size: 13px;
+                        margin-top: 3vh;
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .right{
+                img{
+                    display: none;
+                }
+                span{
+                    margin: 4vh 20vw 0vh 20vw;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

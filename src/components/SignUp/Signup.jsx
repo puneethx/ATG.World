@@ -15,7 +15,7 @@ const Signup = () => {
         </div>
         <div className='acc'>
           <h1>Create Account</h1>
-          <span>Already have an account? <span className='bluebold'><a onClick={()=> setInOpen(!inOpen)}>Sign In</a></span></span>
+          <span>Already have an account? <span className='bluebold' onClick={()=> setInOpen(!inOpen)}>Sign In</span></span>
         </div>
         <div className='main'>
           <div className="left">
@@ -34,9 +34,12 @@ const Signup = () => {
                 <div><input type='password' id='password2' placeholder='Confirm Password'></input></div>
               </div>
             </div>
-            <button className='createBtn'>
-              Create Account
-            </button>
+            <div className="middle">
+              <button className='createBtn'>
+                Create Account
+              </button>
+              <span className='bluebold' onClick={()=> setInOpen(!inOpen)}> Or,Sign In</span>
+            </div>
             <div className='platform'>
               <button className='FB'>
                 <img src={FBLogo} alt="Facebook"/>

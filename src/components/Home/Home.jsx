@@ -21,12 +21,19 @@ import Grp2 from "../../assets/grp2.png";
 import Grp3 from "../../assets/grp3.png";
 import Grp4 from "../../assets/grp4.png";
 import MenuBtn from '../Menu/Menu';
+import Pen from "../../assets/pen.png"
+import SignUp from "../SignUp/Signup";
+import Close from "../../assets/close.png"
 
 
 const Home = () => {
   const [menuOpen1,setMenuOpen1] = useState(null);
   const [menuOpen2,setMenuOpen2] = useState(null);
   const [menuOpen3,setMenuOpen3] = useState(null);
+  const [menuOpen4,setMenuOpen4] = useState(null);
+
+  const [openUp,setOpenUp] = useState(null);
+
   return (
     <div className='home'>
       <div className="left">
@@ -47,7 +54,10 @@ const Home = () => {
             </div>
             <div className='userright'>
               <div><img src={Views} alt="views" className='views'/></div>
-              <div><img src={Share} alt="share" className='share'/></div>
+              <button>
+                <img src={Share} alt="share" className='share'/>
+                  <span>Share</span>
+              </button>
             </div>
           </div>
           {menuOpen1 && <MenuBtn/>}
@@ -69,7 +79,7 @@ const Home = () => {
             </div>
             <div className='userright'>
               <div><img src={Views} alt="views" className='views'/></div>
-              <div><img src={Share} alt="share" className='share'/></div>
+              <button><img src={Share} alt="share" className='share'/>Share</button>
             </div>
           </div>
           {menuOpen2 && <MenuBtn/>}
@@ -103,14 +113,14 @@ const Home = () => {
             </div>
             <div className='userright'>
               <div><img src={Views} alt="views" className='views'/></div>
-              <div><img src={Share} alt="share" className='share'/></div>
+              <button><img src={Share} alt="share" className='share'/>Share</button>
             </div>
           </div>
           {menuOpen3 && <MenuBtn/>}
         </div>
         <div className="post-ared">
           <div className='text'>
-            <button className='menu'>
+            <button className='menu' onClick={()=> setMenuOpen4(!menuOpen4)}>
               <img src={Menu} alt="menu"/>
             </button>
             <div><span className='medtext'>💼️ Job</span><br/></div>
@@ -136,9 +146,10 @@ const Home = () => {
             </div>
             <div className='userright'>
               <div><img src={Views} alt="views" className='views'/></div>
-              <div><img src={Share} alt="share" className='share'/></div>
+              <button><img src={Share} alt="share" className='share'/>Share</button>
             </div>
           </div>
+          {menuOpen4 && <MenuBtn/>}
         </div>
       </div>
       <div className="right">
@@ -162,7 +173,7 @@ const Home = () => {
               <span>Leisure</span>
             </div>
             <div className='grpright'>
-              <button className='grpbtnbl'>Followed</button>
+              <button className='grpbtn'>Follow</button>
             </div>
           </div>
           <div className='grp'>
@@ -195,6 +206,12 @@ const Home = () => {
         </div>
         <div className='seemore'><p className='smore'>See More...</p></div>
       </div>
+      <img className='pen' src={Pen} alt="pen" onClick={()=> setOpenUp(!openUp)} />
+      {openUp && 
+        <>
+          <SignUp/>
+          <div className='opendiv'><img src={Close} alt='img' className='closebutn' onClick={()=> setOpenUp(!openUp)}></img></div>
+        </>}
     </div>
   )
 }

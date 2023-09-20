@@ -9,11 +9,20 @@ const Navbar = () => {
         <div className='navbar'>
             <div className="left">
                 <ul className='navul'>
-                    <li id='active'>All Posts(32)</li>
-                    <li>Article</li>
-                    <li>Event</li>
-                    <li>Eductation</li>
-                    <li>Job</li>
+                    <li id='active'><span>All</span> Posts(368)</li>
+                    <li id='inactive'>Article</li>
+                    <li id='inactive'>Event</li>
+                    <li id='inactive'>Eductation</li>
+                    <li id='inactive'>Job</li>
+                    <li id='filter'> 
+                        <select className='filterdrop' name='filter' id='filter'>
+                            <option>Filter: All</option>
+                            <option value="Article">Article</option>
+                            <option value="Event">Event</option>
+                            <option value="Education">Education</option>
+                            <option value="Job">Job</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
             <div className="right">

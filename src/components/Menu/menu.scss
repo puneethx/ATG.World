@@ -4,7 +4,7 @@
     background-color: white;
     border-radius: 0.4vw;
     position: absolute;
-    top: 47vh;
+    bottom: 8vh;
     right: 1.5vw;
     ul{
         display: flex;
@@ -17,5 +17,13 @@
                 color: black;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .menu{
+        bottom: 4vh;
+        right: 10vw;
+        width: 40vw;
     }
 }

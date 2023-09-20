@@ -16,9 +16,14 @@
                     border-bottom: 2px solid black;
                 }
             }
+            #filter{
+                display: none;
+            }
             
             #active{
                 color: black;
+                font-size: 14px;
+                padding-top: 1.2vh;
                 border-bottom: 2px solid black;
             }
         }
@@ -57,5 +62,53 @@
     z-index: -999;
     .line{
         border: 1px solid #E0E0E0;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .navbar{
+        flex-direction: column;
+        margin: 0;
+        .left{
+            .navul{
+                gap: 0px;
+                li{
+                    padding-bottom: 0vh;
+                    &:hover{
+                        border-bottom: 0px solid black;
+                    }
+                    .filterdrop{
+                        border: none;
+                        font-family: poppins;
+                        background-color: #F1F3F5;
+                        padding: 1vh;
+                        border-radius: 0.6vw;
+                        text-align: center;
+                        position: absolute;
+                        right: 3vw;
+                        outline: none;
+                    }
+                }
+                #inactive{
+                    display: none;
+                }
+                #filter{
+                    display: flex;
+                }
+                #active{
+                    color: black;
+                    border-bottom: 0px solid black;
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .right{
+            display: none;
+        }
+    }
+    .linediv{
+        display: none;
     }
 }

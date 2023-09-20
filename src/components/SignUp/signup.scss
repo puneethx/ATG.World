@@ -7,9 +7,11 @@
     background-color: white;
     padding-bottom: 7vh;
     border-radius: 10px;
-    z-index: 999999;
+    z-index: 1;
     top: 13vh;
     left: 20vw;
+    width: 58.05vw;
+    
     .topbar{
         background-color: #EFFFF4;
         padding: 2vh 7vw;
@@ -70,10 +72,14 @@
                     justify-content: space-between;
                     align-items: center;
                     border:1px solid #D9D9DB;
+                    position: relative;
                     .password{
                         display: flex;
                         .eyediv{
-                            display: flex;
+                            position: absolute;
+                            right: 1.5vh;
+                            top: 1.5vh;
+
                         }
                     }
                     input{
@@ -85,14 +91,19 @@
                     }
                 }
             }
-            .createBtn{
-                padding: 1.5vh 7.82vw;
-                margin-top: 3vh;
-                border-radius: 1.5vw;
-                border: none;
-                color: white;
-                font-family: poppins;
-                background-color: #2F6CE5;
+            .middle{
+                .createBtn{
+                    padding: 1.5vh 7.82vw;
+                    margin-top: 3vh;
+                    border-radius: 1.5vw;
+                    border: none;
+                    color: white;
+                    font-family: poppins;
+                    background-color: #2F6CE5;
+                }
+                .bluebold{
+                    display: none;
+                }
             }
             .platform{
                 display: flex;
@@ -101,6 +112,8 @@
                 margin-top: 3vh;
                 .FB{
                     display: flex;
+                    font-family: poppins;
+                    gap: 0.3vw;
                     border:1px solid #D9D9DB;
                     justify-content: center;
                     background-color: white;
@@ -110,10 +123,19 @@
                 .Google{
                     display: flex;
                     padding: 1.5vh 5vw;
+                    gap: 0.3vw;
+                    font-family: poppins;
                     background-color: white;
                     border:1px solid #D9D9DB;
                     justify-content: center;
                     align-items: center;
+                }
+                a{
+                    text-align: center;
+                    font-size: 13px;
+                    text-decoration: none;
+                    color: black;
+                    margin-top: 2vh;
                 }
             }
         }
@@ -123,6 +145,68 @@
             flex-direction: column;
             span{
                 font-size: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .signup{
+        width: 100%;
+        top: 20vh;
+        left: 0;
+        bottom: 0;
+        .topbar{
+            display: none;
+        }
+        .acc{
+            span{
+                display: none;
+            }
+        }
+        .main{
+            flex-direction: column;
+            .left{
+                .table{
+                    .first-row{
+                        input{
+                            padding-left: 2vw;
+                        }
+                    }
+                    .row{
+                        input{
+                            padding-left: 2vw;
+                        }
+                    }
+                    .third-row{
+                        input{
+                            padding-left: 2vw;
+                        }
+                    }
+                }
+                .middle{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .createBtn{
+                        border-radius: 5vw;
+                    }
+                    .bluebold{
+                        font-size: 13px;
+                        margin-top: 3vh;
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .right{
+                img{
+                    display: none;
+                }
+                span{
+                    margin: 4vh 20vw 0vh 20vw;
+                    text-align: center;
+                }
             }
         }
     }
